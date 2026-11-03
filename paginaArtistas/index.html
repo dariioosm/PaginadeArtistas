@@ -1,14 +1,538 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/jpeg" href="./src/assets/favicon.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>paginaartistas</title>
+    <title>El canto del loco</title>
   </head>
+
   <body>
-    <div id="app"></div>
-    
+    <nav class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">El canto del loco</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuArtista"
+          aria-controls="menuArtista"
+          aria-expanded="false"
+          aria-label="Abrir o cerrar menú"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuArtista">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#discografia" class="nav-link">Discografía</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Álbumes
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#album-1">
+                    El canto del loco
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#album-2">
+                    A contracorriente
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#album-3">
+                    El canto del loco en directo
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#album-4">
+                    Estados de ánimo
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#album-5">
+                    Zapatillas
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#album-6">
+                    Personas
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#album-7">
+                    Por mí y por todos mis compañeros
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#album-8">
+                    Radio la Colifata presenta: El canto del loco
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="discografia" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">Discografía</h2>
+
+          <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100" id="album-1">
+                <img
+                  src="./src/assets/discografia/ecdl.jpg"
+                  class="card-img-top portada"
+                  alt="Portada del álbum El canto del loco"
+                />
+
+                <div class="card-body">
+                  <h3 class="card-title">El canto del loco</h3>
+                  <p class="card-text">Año de publicación: 2000</p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#canciones-1"
+                    aria-expanded="false"
+                    aria-controls="canciones-1"
+                  >
+                    Ver canciones
+                  </button>
+                    <a href="https://open.spotify.com/album/0oL61dcPtVji8N7o90qdHI?si=SlI52WBVTLiq4MOQmbj5Jw"
+                      class="btn btn-success" target="_blank" rel="noopener noreferrer"
+                    >
+                    <span class="visually-hidden">
+                      Enlace de Spotify al álbum El canto del loco 
+                    </span>
+                        Escuchar en Spotify
+                    </a>
+                  </div>
+
+                  <div class="collapse mt-3" id="canciones-1">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item">Pequeñita</li>
+                      <li class="list-group-item">Llueve en mi</li>
+                      <li class="list-group-item">Eres un canalla</li>
+                      <li class="list-group-item">Pasión</li>
+                      <li class="list-group-item">Traidora</li>
+                      <li class="list-group-item">He vuelto a caer</li>
+                      <li class="list-group-item">Sin Mitad</li>
+                      <li class="list-group-item">No quiero nada</li>
+                      <li class="list-group-item">El Agricultor</li>
+                      <li class="list-group-item">Y si el miedo</li>
+                      <li class="list-group-item">Busco la vida</li>
+                      <li class="list-group-item">Vivir asi es morir de amor</li>
+                    </ol>
+                  </div>
+                </div>
+              </article>
+            </div>
+            
+             <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100" id="album-2">
+                <img
+                  src="./src/assets/discografia/contracorriente.jpg"
+                  class="card-img-top portada"
+                  alt="Portada del álbum A contracorriente"
+                />
+
+                <div class="card-body">
+                  <h3 class="card-title">A contracorriente</h3>
+                  <p class="card-text">Año de publicación: 2002</p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#canciones-2"
+                    aria-expanded="false"
+                    aria-controls="canciones-2"
+                  >
+                    Ver canciones
+                  </button>
+                    <a href="https://open.spotify.com/album/4GAsbhINFlN5K9PZ6vEaCW?si=FP2Ow6tgTQ--l_PV5V16EA"
+                      class="btn btn-success" target="_blank" rel="noopener noreferrer"
+                    >
+                    <span class="visually-hidden">
+                      Enlace de Spotify al álbum A contracorriente 
+                    </span>
+                        Escuchar en Spotify
+                    </a>
+                  </div>
+
+                  <div class="collapse mt-3" id="canciones-2">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item">Son sueños</li>
+                      <li class="list-group-item">Preguntas</li>
+                      <li class="list-group-item">Vamonos</li>
+                      <li class="list-group-item">Puede ser (con Amaia Montero)</li>
+                      <li class="list-group-item">A contracorriente</li>
+                      <li class="list-group-item">Una salida</li>
+                      <li class="list-group-item">Contigo</li>
+                      <li class="list-group-item">Tremendo</li>
+                      <li class="list-group-item">Super Heroe</li>
+                      <li class="list-group-item">Para siempre</li>
+                      <li class="list-group-item">Crash</li>
+                      <li class="list-group-item">Aquellos años locos (bonus track)</li>
+                    </ol>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+             <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100" id="album-3">
+                <img
+                  src="./src/assets/discografia/elcdldirecto.jpg"
+                  class="card-img-top portada"
+                  alt="Portada del álbum El canto del loco en directo"
+                />
+
+                <div class="card-body">
+                  <h3 class="card-title">El canto del loco en directo</h3>
+                  <p class="card-text">Año de publicación: 2003</p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#canciones-3"
+                    aria-expanded="false"
+                    aria-controls="canciones-3"
+                  >
+                    Ver canciones
+                  </button>
+                    <a href="https://open.spotify.com/album/2GuEFSjKoiQNtUiDr0pBW4?si=6cXb4ABUT2qTvr9Qf5fSog"
+                      class="btn btn-success" target="_blank" rel="noopener noreferrer"
+                    >
+                    <span class="visually-hidden">
+                      Enlace de Spotify al álbum El canto del loco en directo
+                    </span>
+                        Escuchar en Spotify
+                    </a>
+                  </div>
+                  
+
+                  <div class="collapse mt-3" id="canciones-3">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item">Una salida (Directo)</li>
+                      <li class="list-group-item">Preguntas (Directo)</li>
+                      <li class="list-group-item">No quiero nada (Directo)</li>
+                      <li class="list-group-item">A contracorriente (Directo)</li>
+                      <li class="list-group-item">Son sueños (Directo)</li>
+                      <li class="list-group-item">Super héroe (Directo)</li>
+                      <li class="list-group-item">Y si el miedo (Directo)</li>
+                      <li class="list-group-item">Crash (Directo)</li>
+                      <li class="list-group-item">Llueve en mi (Directo)</li>
+                      <li class="list-group-item">Pequeñita(Directo)</li>
+                      <li class="list-group-item">Eres un canalla (Directo)</li>
+                    </ol>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100" id="album-4">
+                <img
+                  src="./src/assets/discografia/estadosdeanimo.jpg"
+                  class="card-img-top portada"
+                  alt="Portada del álbum Estados de ánimo"
+                />
+
+                <div class="card-body">
+                  <h3 class="card-title">Estados de ánimo</h3>
+                  <p class="card-text">Año de publicación: 2003</p>
+                  <div class="d-flex flex-wrap gap-2">
+                     <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#canciones-4"
+                    aria-expanded="false"
+                    aria-controls="canciones-4"
+                  >
+                    Ver canciones
+                  </button>
+                    <a href="https://open.spotify.com/album/3iri8yG0Z6mdcsXP3StOEM?si=sc5tIN5GRnqbI_WaPZy6dQ"
+                      class="btn btn-success" target="_blank" rel="noopener noreferrer"
+                    >
+                    <span class="visually-hidden">
+                      Enlace de Spotify al álbum Estados de ánimo 
+                    </span>
+                        Escuchar en Spotify
+                    </a>
+                  </div>
+
+                  <div class="collapse mt-3" id="canciones-4">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item">Volver a disfrutar</li>
+                      <li class="list-group-item">La madre de José</li>
+                      <li class="list-group-item">Ya nada volerá a ser como antes</li>
+                      <li class="list-group-item">Insoportable</li>
+                      <li class="list-group-item">Dentro de mi</li>
+                      <li class="list-group-item">Otra vez</li>
+                      <li class="list-group-item">Siempre cerca</li>
+                      <li class="list-group-item">Como un perro ladrando</li>
+                      <li class="list-group-item">Ekix</li>
+                      <li class="list-group-item">Una foto en blanco y negro</li>
+                      <li class="list-group-item">No voy a parar</li>
+                      <li class="list-group-item">Te recuerdo (Bonus track)</li>
+                    </ol>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100" id="album-5">
+                <img
+                  src="./src/assets/discografia/zapatillas.jpg"
+                  class="card-img-top portada"
+                  alt="Portada del álbum Zapatillas"
+                />
+
+                <div class="card-body">
+                  <h3 class="card-title">Zapatillas</h3>
+                  <p class="card-text">Año de publicación: 2005</p>
+
+                  <div class="d-flex flex-wrap gap-2">
+                     <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#canciones-5"
+                    aria-expanded="false"
+                    aria-controls="canciones-5"
+                  >
+                    Ver canciones
+                  </button>
+                    <a href="https://open.spotify.com/album/3dToFs6qDSWkR1HttqgpnF?si=yK9UjGYnRyuFBXaJc6Ht_g"
+                      class="btn btn-success" target="_blank" rel="noopener noreferrer"
+                    >
+                    <span class="visually-hidden">
+                      Enlace de Spotify al álbum Zapatillas 
+                    </span>
+                        Escuchar en Spotify
+                    </a>
+                  </div>
+                 
+
+                  <div class="collapse mt-3" id="canciones-5">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item">Canciones</li>
+                      <li class="list-group-item">Volverá</li>
+                      <li class="list-group-item">Zapatillas</li>
+                      <li class="list-group-item">Será</li>
+                      <li class="list-group-item">Besos</li>
+                      <li class="list-group-item">Vuelve</li>
+                      <li class="list-group-item">Despiértame</li>
+                      <li class="list-group-item">Úsanos</li>
+                      <li class="list-group-item">El Pescao</li>
+                      <li class="list-group-item">Que caro es el tiempo</li>
+                      <li class="list-group-item">Desaparece</li>
+                      <li class="list-group-item">Tal como eres</li>
+                      <li class="list-group-item">Por ti</li>
+                    </ol>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100" id="album-6">
+                <img
+                  src="./src/assets/discografia/personas.jpg"
+                  class="card-img-top portada"
+                  alt="Portada del álbum Personas"
+                />
+
+                <div class="card-body">
+                  <h3 class="card-title">Personas</h3>
+                  <p class="card-text">Año de publicación: 2008</p>
+                  <div class="d-flex flex-wrap gap-2">
+                     <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#canciones-6"
+                    aria-expanded="false"
+                    aria-controls="canciones-6"
+                  >
+                    Ver canciones
+                  </button>
+                    <a href="https://open.spotify.com/album/0Yj240rnqK7ntJBjIQ07Tb?si=MHvf4_ogRtytimtG-pXASA"
+                      class="btn btn-success" target="_blank" rel="noopener noreferrer"
+                    >
+                    <span class="visually-hidden">
+                      Enlace de Spotify al álbum Personas 
+                    </span>
+                        Escuchar en Spotify
+                    </a>
+                  </div>
+
+                  <div class="collapse mt-3" id="canciones-6">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item">Corazón</li>
+                      <li class="list-group-item">Acabado en A</li>
+                      <li class="list-group-item">Eres tonto</li>
+                      <li class="list-group-item">Peter Pan</li>
+                      <li class="list-group-item">La vida</li>
+                      <li class="list-group-item">Personas</li>
+                      <li class="list-group-item">Fin de semana</li>
+                      <li class="list-group-item">Eh tú!!!</li>
+                      <li class="list-group-item">Todo lo hago mal</li>
+                      <li class="list-group-item">La suerte de mi vida</li>
+                      <li class="list-group-item">Un millón de cicatrices</li>
+                      <li class="list-group-item">Gigante</li>
+                      <li class="list-group-item">Gracias</li>
+                      <li class="list-group-item">H.D.P</li>
+                    </ol>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+
+             <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100" id="album-7">
+                <img
+                  src="./src/assets/discografia/pormi.jpg"
+                  class="card-img-top portada"
+                  alt="Portada del álbum Por mí y por todos mis compañeros"
+                />
+
+                <div class="card-body">
+                  <h3 class="card-title">Por mí y por todos mis compañeros</h3>
+                  <p class="card-text">Año de publicación: 2009</p>
+                   <div class="d-flex flex-wrap gap-2">
+                     <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#canciones-7"
+                    aria-expanded="false"
+                    aria-controls="canciones-7"
+                  >
+                    Ver canciones
+                  </button>
+                    <a href="https://open.spotify.com/album/3ccUQA3LcKnQN28rHI597A?si=CPGf3JpGQ-GDEP7rq4O8Jg"
+                      class="btn btn-success" target="_blank" rel="noopener noreferrer"
+                    >
+                    <span class="visually-hidden">
+                      Enlace de Spotify al álbum Por mi y por todos mis compañeros 
+                    </span>
+                        Escuchar en Spotify
+                    </a>
+                  </div>
+                 
+
+                  <div class="collapse mt-3" id="canciones-7">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item">Mejor</li>
+                      <li class="list-group-item">La casa de la bomba</li>
+                      <li class="list-group-item">Nada de nada</li>
+                      <li class="list-group-item">Aunque tu no lo sepas</li>
+                      <li class="list-group-item">El garrotin (con José Mercé)</li>
+                      <li class="list-group-item">No puedo vivir sin ti</li>
+                      <li class="list-group-item">Aquellas pequeñas cosas</li>
+                      <li class="list-group-item">Años 80</li>
+                      <li class="list-group-item">Se acabó</li>
+                      <li class="list-group-item">Feo fuerte y formal</li>
+                      <li class="list-group-item">María la portuguesa</li>
+                    </ol>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="card h-100" id="album-8">
+                <img
+                  src="./src/assets/discografia/radiocolifata.jpg"
+                  class="card-img-top portada"
+                  alt="Portada del álbum Radio la Colifata presenta: El canto del loco"
+                />
+
+                <div class="card-body">
+                  <h3 class="card-title">Radio la Colifata presenta: El canto del loco</h3>
+                  <p class="card-text">Año de publicación: 2009</p>
+                  <div class="d-flex flex-wrap gap-2">
+                      <button
+                      class="btn btn-primary"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#canciones-8"
+                      aria-expanded="false"
+                      aria-controls="canciones-8"
+                      >
+                        Ver canciones
+                      </button>
+
+                    <a href="https://open.spotify.com/album/6ILlAsXOF5S8OdIYyS1XZf?si=pFwS1ArHQcCuTBsg-DHCjA"
+                      class="btn btn-success" target="_blank" rel="noopener noreferrer"
+                    >
+                    <span class="visually-hidden">
+                      Enlace de Spotify al álbum Radio la Colifata presenta: El canto del loco 
+                    </span>
+                        Escuchar en Spotify
+                    </a>
+                  </div>
+
+                  <div class="collapse mt-3" id="canciones-8">
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item">Un millón de cicatrices</li>
+                      <li class="list-group-item">Ya nada volverá a ser como antes</li>
+                      <li class="list-group-item">Quiero aprender de ti</li>
+                      <li class="list-group-item">Volverá(feat. Alejandro Sanz)</li>
+                      <li class="list-group-item">Peter Pan</li>
+                      <li class="list-group-item">Besos</li>
+                      <li class="list-group-item">Corazón</li>
+                      <li class="list-group-item">La madre de José/Sin documentos</li>
+                      <li class="list-group-item">Eres tonto (feat. Vicentico)</li>
+                      <li class="list-group-item">Puede ser</li>
+                      <li class="list-group-item">Zapatillas</li>
+                      <li class="list-group-item">Canciones</li>
+                      <li class="list-group-item">Personas</li>
+                      <li class="list-group-item">Contigo(feat. Natalia Lafourcade)</li>
+                      <li class="list-group-item">Llueve en mi</li>
+                      <li class="list-group-item">El Pescao</li>
+                      <li class="list-group-item">La suerte de mi vida</li>
+                      <li class="list-group-item">Una foto en blanco y negro</li>
+                      <li class="list-group-item">Fin de semana</li>
+                      <li class="list-group-item">Peter Pan (with Leiva)</li>
+                    </ol>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
