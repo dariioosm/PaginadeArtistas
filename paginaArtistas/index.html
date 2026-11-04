@@ -10,7 +10,7 @@
   <body>
     <nav class="navbar navbar-expand-md bg-dark sticky-top" data-bs-theme="dark">
       <div class="container">
-        <a class="navbar-brand" href="#">El canto del loco</a>
+        <a class="navbar-brand" href="#bandCarousel">El canto del loco</a>
 
         <button
           class="navbar-toggler"
@@ -88,8 +88,106 @@
         </div>
       </div>
     </nav>
+    <header id="portada">
+      <div id="bandCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" role="region" aria-label="Carrusel de presentación de El Canto del Loco">
+        
+        <!-- Indicadores accesibles con aria-label descriptivos -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#bandCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1: Foto grupal de la banda"></button>
+          <button type="button" data-bs-target="#bandCarousel" data-bs-slide-to="1" aria-label="Diapositiva 2: Concierto en directo"></button>
+          <button type="button" data-bs-target="#bandCarousel" data-bs-slide-to="2" aria-label="Diapositiva 3: Colección de discos y vinilos"></button>
+        </div>
+
+        <!-- Elementos del carrusel -->
+        <div class="carousel-inner">
+          
+          <!-- Slide 1 -->
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img 
+              src="src/assets/cabecera/foto_grupal.jpeg" 
+              class="d-block w-100 object-fit-cover" 
+              style="height: 85vh;" 
+              alt="Fotografía oficial y grupal de los integrantes de El Canto del Loco"
+            >
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded-4 mb-5">
+              <h1 class="display-4 fw-bold text-danger">EL CANTO DEL LOCO</h1>
+              <p class="lead">El regreso de la banda que marcó a toda una generación del pop-rock español.</p>
+              <a href="#discografia" class="btn btn-danger btn-lg mt-2">Explorar Discografía</a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <img 
+              src="src/assets/cabecera/foto_grupal2.webp" 
+              class="d-block w-100 object-fit-cover" 
+              style="height: 85vh;" 
+              alt="Guitarrista tocando en directo sobre el escenario con iluminación intensa"
+            >
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded-4 mb-5">
+              <h2 class="display-4 fw-bold text-light">GIRA HISTÓRICA</h2>
+              <p class="lead">Revive los grandes himnos de la banda en directo.</p>
+              <a href="#gira" class="btn btn-outline-light btn-lg mt-2">Ver Fechas</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" data-bs-interval="5000">
+            <img 
+              src="src/assets/cabecera/discos.png" 
+              class="d-block w-100 object-fit-cover" 
+              style="height: 85vh;" 
+              alt="Colección de discos, portadas y vinilos de la discografía de la banda sobre un fondo verde"
+            >
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-4 rounded-4 mb-5">
+              <h2 class="display-4 fw-bold text-danger">MÚSICA Y ENERGÍA</h2>
+              <p class="lead">Descubre la historia, los miembros y toda la trayectoria del grupo.</p>
+              <a href="#grupo" class="btn btn-outline-danger btn-lg mt-2">Conoce al Grupo</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Controles Anterior / Siguiente con aria-label explícito -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#bandCarousel" data-bs-slide="prev" aria-label="Diapositiva anterior">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bandCarousel" data-bs-slide="next" aria-label="Diapositiva siguiente">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+      </div>
+    </header>
 
     <main>
+      <section id="grupo" class="py-5">
+        <div class="container">
+          <h2 class="text-center mb-4">El Grupo</h2>
+          <p class="text-center lead">
+            El Canto del Loco fue una banda de pop-rock española formada en
+            1994 en Madrid. La banda estaba compuesta por Dani Martín
+            (voz), David Otero (guitarra y coros), Chema Ruiz (bajo) y Jandro
+            Velázquez (batería). Su estilo musical combinaba elementos del
+            pop, rock y punk, y se caracterizaba por sus letras emotivas y
+            pegajosas.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <img src="./src/assets/grupo/dani_martin.jpg" alt="Dani Martín" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-12 col-md-6">
+              <img src="./src/assets/grupo/david_otero.jpg" alt="David Otero" class="img-fluid rounded-circle">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       <section id="discografia" class="py-5">
         <div class="container">
           <h2 class="text-center mb-4">Discografía</h2>
@@ -531,8 +629,12 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <script type="module" src="/src/main.js"></script>
   </body>
+<footer>
+  
+</footer>
 </html>
